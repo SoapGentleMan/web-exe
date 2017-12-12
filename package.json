@@ -1,7 +1,7 @@
 {
-  "name": "web-app",
+  "name": "web-exe",
   "version": "1.0.0",
-  "description": "AVL Insight",
+  "description": "ww's web exe",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
