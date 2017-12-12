@@ -1,0 +1,19 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "AVL Insight",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . web --platform=win32 --arch=x64  --out ./app --electron-version 1.7.6 --overwrite --icon=./ww.ico --ignore=.idea",
+    "asar": "asar pack ./app/web-win32-x64/resources/app ./app/web-win32-x64/resources/app.asar && rm -rf ./app/web-win32-x64/resources/app"
+  },
+  "devDependencies": {
+    "asar": "^0.12.4",
+    "electron-packager": "^8.7.2"
+  },
+  "dependencies": {
+    "electron": "^1.7.6",
+    "lz-string": "^1.4.4"
+  }
+}
